@@ -1,0 +1,31 @@
+{% extends 'frontend/base.html' %}
+{% block title %} Data Table {% endblock %} 
+{% block content %}
+
+<div class="container" >
+    <table class="table" style="margin-top: 7%;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Details</th>
+                <th>Barcode</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in products %}
+            <tr>
+                <td>{{p.product_name}}</td>
+                <td>{{p.product_details}}</td>
+                <td>{{p.product_barcode}}</td>
+                <td>{{p.product_qty}}</td>
+                <td>{{p.product_price}}</td>
+                <td>{{p.product_status}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

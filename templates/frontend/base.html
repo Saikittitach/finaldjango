@@ -7,22 +7,26 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="{% static './lib/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static './lib/fontawesome/css/all.min.css' %}">
+    
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="#">61010084</a>
+    <!-- <nav class="navbar navbar-expand-md navbar-light bg-light mr-sm-2">
+        <div class="container">
+        <a class="navbar-brand ">61010084</a>
+        </div>
+
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav mr-auto mt-4 mt-lg-0 ">
                 <li class="nav-item active">
                     <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="{% url 'about' %}">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{% url 'datatable' %}">Data <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="{% url 'contact' %}">Contact <span class="sr-only">(current)</span></a>
@@ -30,16 +34,40 @@
 
 
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
         </div>
-    </nav>
+    </nav> -->
+
+
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: #1c1b1b;">
+        <a class="navbar-brand" style="color: white; margin-left: 15px;">61010084</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" ">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" style="color: white;">
+            <div class="container " style="margin-left: 80%;">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link text-uppercase "style="color: white;" href="{% url 'index' %}" >Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase "style="color: white;" href="{% url 'datatable' %}">Data</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link text-uppercase "style="color: white;" href="{% url 'contact' %}">Contact</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    
+
+
     {% block content %}
     {% endblock %}
     <script src="{% static './lib/jquery/jquery-2.2.4.js' %}"></script>
     <script src="{% static './lib/popper/popper.min.js' %}"></script>
     <script src="{% static './lib/bootstrap/js/bootstrap.min.js' %}"></script>  
+    
 </body>
 </html>
