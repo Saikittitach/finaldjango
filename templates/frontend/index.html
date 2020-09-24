@@ -17,7 +17,7 @@
 <div class="container">
   <form class="contact-form" method="post" >
     <!-- {% csrf_token % } -->
-    {{form}}
+    <!-- {{form}} -->
     <div class="form-row justify-content-center">
       <div class="col-md-4 mb-3" style="margin-top:30px">
         <label for="firstname" >First name</label>
@@ -50,35 +50,6 @@
 </div>
 
 </body>
-<!-- <div align="center">
-<button type="submit" class="btn btn-primary">Submit</button>
-</div>
-<br> -->
 
-<!-- <div class="container">
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Details</th>
-                <th>Barcode</th>
-                <th>Qty</th>
-                <th>Price</th>
-                <th>Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for p in products %}
-            <tr>
-                <td>{{p.product_name}}</td>
-                <td>{{p.product_details}}</td>
-                <td>{{p.product_barcode}}</td>
-                <td>{{p.product_qty}}</td>
-                <td>{{p.product_price}}</td>
-                <td>{{p.product_status}}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-</div> -->
+
 {% endblock %}
