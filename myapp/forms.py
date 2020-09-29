@@ -1,4 +1,8 @@
 from django import forms
+from django.forms import ModelForm
+from myapp.models import Datatabase
 
-class NameForm(forms.Form):
-    your_firstname = forms.CharField(label='firstname', max_length=128)
+class databaseform(forms.ModelForm):
+    class Meta:
+        model = Datatabase
+        fields= ["firstname","lastname", "email", "phone", "desc"]

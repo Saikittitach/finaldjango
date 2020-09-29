@@ -6,23 +6,23 @@
     <table class="table" style="margin-top: 7%;">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Details</th>
-                <th>Barcode</th>
-                <th>Qty</th>
-                <th>Price</th>
-                <th>Status</th>
+                <th>Firstame</th>
+                <th>Lastname</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Description</th>
+                <!-- <th>Status</th> -->
             </tr>
         </thead>
         <tbody>
-            {% for p in products %}
+            {% for p in form %}
             <tr>
-                <td>{{p.product_name}}</td>
-                <td>{{p.product_details}}</td>
-                <td>{{p.product_barcode}}</td>
-                <td>{{p.product_qty}}</td>
-                <td>{{p.product_price}}</td>
-                <td>{{p.product_status}}</td>
+                <td>{{p.firstname}}</td>
+                <td>{{p.lastname}}</td>
+                <td>{{p.email}}</td>
+                <td>{{p.phone}}</td>
+                <td>{{p.desc}}</td>
+                <!-- <td>{{p.product_status}}</td> -->
             </tr>
             {% endfor %}
         </tbody>

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myapp',
+    'form',
 ]
 
 MIDDLEWARE = [
@@ -85,12 +86,14 @@ WSGI_APPLICATION = 'mydb.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'myappdb',
+        'NAME': 'clouddb',
         'USER': 'username',
         'PASSWORD': 'password',
         'HOST': '192.168.64.2',
         'PORT': '3306', 
-
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
 

@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="{% static './lib/bootstrap/css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static './lib/fontawesome/css/all.min.css' %}">
     <link rel="icon" href="{% static './images/cloud_icon.png' %}">
-    
+   
 
 </head>
 <body>
-
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" " style="background-color: #1c1b1b;">
-        <a class="navbar-brand" style="color: white; margin-left: 15px;">61010084</a>
+<div class="container">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #1c1b1b;">
+        <img src="static/images/cloud_icon.png" width="40px" height="40px">
+        <a class="navbar-brand "style=" color: white; margin-left: 15px;">61010084</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" ">
           <span class="navbar-toggler-icon" ></span>
         </button>
@@ -34,7 +35,7 @@
         </div>
         </div>
       </nav>
-    
+    </div>
 
 
     {% block content %}
