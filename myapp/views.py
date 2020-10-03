@@ -35,8 +35,8 @@ def datatable(request):
         filled_form = databaseform(request.POST)
         if filled_form.is_valid():
             filled_form.save()
-    form = databaseform()
-    return render(request, 'frontend/datatable.html',{'order':form})
+        form = databaseform()
+    return render(request, 'frontend/datatable.html',{'form':form})
 
 
     # form = databaseform(request.POST or None)
