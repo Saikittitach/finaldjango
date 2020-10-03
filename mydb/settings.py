@@ -86,10 +86,10 @@ WSGI_APPLICATION = 'mydb.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'clouddb',
-        'USER': 'username',
-        'PASSWORD': 'password',
-        'HOST': '192.168.64.2',
+        'NAME': 'heroku_335c4016844e833',
+        'USER': 'b4e3d4a98f7eaf',
+        'PASSWORD': '08ae8195',
+        'HOST': 'us-cdbr-east-02.cleardb.com',
         'PORT': '3306', 
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
